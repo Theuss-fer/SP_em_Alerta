@@ -3,6 +3,7 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert } from "reac
 import { useRouter } from "expo-router";
 import{ Ionicons } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
+import styles from "../styles/registerStyle";
 
 export default function Register(){
     const router = useRouter();
@@ -86,40 +87,4 @@ export default function Register(){
             
         </LinearGradient>
     )
-}
-const styles = StyleSheet.create({
-    container:{
-        flex: 1,
-        justifyContent: "center",
-        padding: 20,
-    },
-    title: {
-    fontSize: 28,
-    fontWeight: "bold",
-    textAlign: "center",
-    marginBottom: 40,
-    color: "#fff",
-  },
-  input: {
-    backgroundColor: "#ffffff",
-    padding: 15,
-    borderRadius: 8,
-    marginBottom: 15,
-  },
-   button: {
-    backgroundColor: "#FFD700",
-    padding: 15,
-    borderRadius: 8,
-    alignItems: "center",
-    marginTop: 10,
-  },
-  buttonText: {
-    color: "#000000",
-    fontWeight: "bold",
-  },
-  backButton:{
-    position: "absolute",
-    top:  50,
-    left: 20
-  }
-})
+};

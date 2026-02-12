@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { View, Text, StyleSheet, Image, Animated } from "react-native";
 import { useRouter } from "expo-router";
 import { LinearGradient } from "expo-linear-gradient"
+import styles from "../styles/splashStyle";
 
 export default function Splash() {
   const router = useRouter();
@@ -45,22 +46,3 @@ export default function Splash() {
     </LinearGradient>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,    
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  logo: {
-    width: 300,
-    height: 300,
-    
-  },
-  slogan: {
-    marginTop: 20,
-    color: "#eb0a0a",
-    fontSize: 24,
-    fontWeight: "bold",
-  },
-});
