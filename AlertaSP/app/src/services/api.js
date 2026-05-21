@@ -10,7 +10,7 @@ function getApiUrl() {
         return `${window.location.protocol}//${window.location.hostname}:5001`;
     }
 
-    return "http://192.168.15.25:5001";
+    return "http://192.168.68.132:5001";
 }
 
 const api = axios.create({
